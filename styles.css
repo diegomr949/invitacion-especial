@@ -114,6 +114,15 @@ td.column {
     box-shadow: 0em 0em 0.625em rgba(255, 255, 255, 0.5); /* Añade una sombra sutil */
     max-width: 150em;
 }
+iframe {
+    width: 25em; /* Establecer el ancho deseado */
+    height: 18.75em; /* Establecer la altura deseada */
+    border: 0; /* Quitar el borde */
+    allowfullscreen: true; /* Permitir pantalla completa */
+    loading: lazy; /* Carga perezosa */
+    referrerpolicy: no-referrer-when-downgrade; /* Política de referencia */
+  }
+  
 
 #fecha {
     line-height: 1em;
