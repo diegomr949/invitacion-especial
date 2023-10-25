@@ -21,122 +21,85 @@
 <body>
    
     <div class="content">
+        <div class="nav"><img src="assets/img/logo CPCEMZA.png" alt="Logo" class="centered-logo"></div>
         <div>
-            <img src="assets/img/logo CPCEMZA.png" alt="Logo" class="centered-logo">
-        </div>
-        <div>
+            
             <h4>Queremos que seas parte y que festejemos juntos </h4>
             <H4>un nuevo aniversario y el cierre de año del Consejo. </H4>
             <H4>Tu participación y acompañamiento es muy importante para nuestra institución.</H4>
             <h5>¡FIESTA ANUAL 76° ANIVERSARIO!</h5>
             <h6 class="subrayado">SÁBADO 11 DE NOVIEMBRE A LAS 20.30hs</h6>
-        </div>
-        <div>
-            
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfiaNQwqo1ZcmMSA32ll-CeK1YROBjozcNuvG2U3QVEpj3j7w/viewform?embedded=true" width="840" height="1004" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
         </div>
         <div>
-            <h3>
-                ¡CONFIRMANOS FALTAN!
-
-            </h3>
-            <style>
-                body {
-                  margin: 0;
-                  padding: 0;
-                  margin-top: 5;
-                  margin-bottom: 5;
-                }
+            <div class="contador">
+                <h3>¡CONFIRMANOS FALTAN! </h3>
+               
+                <div id="fecha">
+                    <span id="dias"></span> días, <span id="horas"></span> horas, <span id="minutos"></span> minutos, <span id="segundos"></span> segundos 
+                  </div>
+                  <script>
+                    var tiempo = {};
+                    var fecha_objetivo = new Date("2023-11-06 12:00:00 PM");
+                
+                    function mostrar_hora() {
+                      var now = new Date();
+                      var tiempo_restante = fecha_objetivo - now;
+                
+                      var segundos = Math.floor((tiempo_restante / 1000) % 60);
+                      var minutos = Math.floor((tiempo_restante / (1000 * 60)) % 60);
+                      var horas = Math.floor((tiempo_restante / (1000 * 60 * 60)) % 24);
+                      var dias = Math.floor(tiempo_restante / (1000 * 60 * 60 * 24));
+                
+                      tiempo.dias = document.getElementById('dias');
+                      tiempo.horas = document.getElementById('horas');
+                      tiempo.minutos = document.getElementById('minutos');
+                      tiempo.segundos = document.getElementById('segundos');
+                
+                      tiempo.dias.innerHTML = dias;
+                      tiempo.horas.innerHTML = horas;
+                      tiempo.minutos.innerHTML = minutos;
+                      tiempo.segundos.innerHTML = segundos;
+                    }
+                
+                    mostrar_hora(); // Llamar a mostrar_hora() una vez al cargar la página
+                
+                    // Actualizar la hora cada segundo (1000 ms)
+                    var intervalo = setInterval(mostrar_hora, 1000);
+                  </script>
             
-                #fecha {
-                  line-height: 1em;
-                  text-align: center;
-                  font-size: 220%;
-                  font-family: Arial;
-                  color: WHITE;
-                  margin: 5px;
-                }
             
-                @media (max-width: 768px) {
-                  #fecha {
-                    font-size: 150%; /* Reduzco el tamaño de fuente para pantallas más pequeñas */
-                    margin: 5px; /* Reduzco los márgenes para pantallas más pequeñas */
-                  }
-                }
-            
-                @media (max-width: 480px) {
-                  #fecha {
-                    font-size: 90%; /* Reduzco aún más el tamaño de fuente para pantallas pequeñas (como celulares en posición vertical) */
-                  }
-                }
-              </style>
-            <div id="fecha">
-                <span id="dias"></span> días, <span id="horas"></span> horas, <span id="minutos"></span> minutos, <span id="segundos"></span> segundos
-              </div>
-              <script>
-                var tiempo = {};
-                var fecha_objetivo = new Date("2023-11-06 12:00:00 PM");
-            
-                function mostrar_hora() {
-                  var now = new Date();
-                  var tiempo_restante = fecha_objetivo - now;
-            
-                  var segundos = Math.floor((tiempo_restante / 1000) % 60);
-                  var minutos = Math.floor((tiempo_restante / (1000 * 60)) % 60);
-                  var horas = Math.floor((tiempo_restante / (1000 * 60 * 60)) % 24);
-                  var dias = Math.floor(tiempo_restante / (1000 * 60 * 60 * 24));
-            
-                  tiempo.dias = document.getElementById('dias');
-                  tiempo.horas = document.getElementById('horas');
-                  tiempo.minutos = document.getElementById('minutos');
-                  tiempo.segundos = document.getElementById('segundos');
-            
-                  tiempo.dias.innerHTML = dias;
-                  tiempo.horas.innerHTML = horas;
-                  tiempo.minutos.innerHTML = minutos;
-                  tiempo.segundos.innerHTML = segundos;
-                }
-            
-                mostrar_hora(); // Llamar a mostrar_hora() una vez al cargar la página
-            
-                // Actualizar la hora cada segundo (1000 ms)
-                var intervalo = setInterval(mostrar_hora, 1000);
-              </script>
         </div>
-        <div class="container">
-            <div class="column">
-                <img src="assets/img/Campus1.PNG" alt="Imagen 1">
-                <img src="assets/img/Campus2.PNG" alt="Imagen 2">
-            </div>
-            <div class="column">
-                <h3>SÁBADO 11 DE NOVIEMBRE A LAS 20.30hs</h3>
-                <h5>LUGAR:</h5>
-                <p>Campus Doc Manuel Belgrano (Estacionamiento por DGI)</p>
-                <p>Terrada 6612, Luján de Cuyo, Mendoza.</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.940124247041!2d-68.84475172340262!3d-32.97898147352412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0b11e6fedf0d%3A0x6fc06d001f4bd646!2sCampus%20Dr.%20Manuel%20Belgrano%20-%20CPCE%20Mza!5e0!3m2!1ses-419!2sar!4v1698243048066!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            
-            
+        
+        <table border="0">
+            <tr>
+                <td class="column">
+                    <img src="assets/img/Campus1.PNG" alt="Imagen 1">
+                    <img src="assets/img/Campus2.PNG" alt="Imagen 2">
+                </td>
+                <td class="column">
+                    <h3>SÁBADO 11 DE NOVIEMBRE A LAS 20.30hs</h3>
+                    <h5>LUGAR:</h5>
+                    <p>Campus Doc Manuel Belgrano (Estacionamiento por DGI)</p>
+                    <p>Terrada 6612, Luján de Cuyo, Mendoza.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.940124247041!2d-68.84475172340262!3d-32.97898147352412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0b11e6fedf0d%3A0x6fc06d001f4bd646!2sCampus%20Dr.%20Manuel%20Belgrano%20-%20CPCE%20Mza!5e0!3m2!1ses-419!2sar!4v1698243048066!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+            </tr>
+        </table>
     </div>
-    <div>
-        <div class="social-links">
-            <a href="https://www.facebook.com/CPCEMZA">
-                <div>
-                    <img src="assets/logos RRSS/logotipo-oficial-facebook-2014.png" alt="Facebook" class="logo">
-                </div>
-            </a>
-            <a href="https://www.instagram.com/cpcemendoza/">
-                <div>
-                    <img src="assets/logos RRSS/logotipo-oficial-instagram-2016.png" alt="Instagram" class="logo">
-                </div>
-            </a>
-            <a href="https://www.linkedin.com/in/consejo-profesional-de-ciencias-econ%C3%B3micas-mendoza-b15020175">
-                <div>
-                    <img src="assets/logos RRSS/logotipo-oficial-linkedin-2014.png" alt="Linkedin" class="logo">
-                </div>
-            </a>
-        </div>
-    </div>
+    <div class="social-links">
+        <a href="https://www.facebook.com/CPCEMZA">
+            <img src="assets/logos RRSS/logotipo-oficial-facebook-2014.png" alt="Facebook" class="logo">
+        </a>
+        <a href="https://www.instagram.com/cpcemendoza/">
+            <img src="assets/logos RRSS/logotipo-oficial-instagram-2016.png" alt="Instagram" class="logo">
+        </a>
+        <a href="https://www.linkedin.com/in/consejo-profesional-de-ciencias-econ%C3%B3micas-mendoza-b15020175">
+            <img src="assets/logos RRSS/logotipo-oficial-linkedin-2014.png" alt="Linkedin" class="logo">
+        </a>
 
+   
+    
 </body>
+
 </html>
