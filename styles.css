@@ -9,12 +9,13 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    font-size: 16px;
 }
 
 /* Estilos para el contenido */
 .content {
     text-align: center;
-    padding: 20px; /* Espacio entre el contenido y los bordes */
+    padding: 1.25em; /* Espacio entre el contenido y los bordes */
 }
 
 .centered-logo {
@@ -23,7 +24,7 @@ body {
 }
 
 .content div {
-    padding: 10px;
+    padding: 0.625em;
     margin: 0;
     box-sizing: border-box;
     color: #FFF;
@@ -34,7 +35,7 @@ footer {
     background-color: #004EA1;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 0.625em;
 }
 
 
@@ -47,14 +48,14 @@ footer {
 
 .column {
     flex: 1;
-    padding: 10px;
+    padding: 0.625em;
     box-sizing: border-box;
     text-align: center;
 }
 
 .column img {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
     margin-left: auto;
     margin-right: auto;
     
@@ -63,7 +64,7 @@ footer {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 0.625em;
 }
 
 .social-links a {
@@ -71,15 +72,15 @@ footer {
 }
 
 .logo {
-    width: 30px;
-    height: 30px;
+    width: 1.875em;
+    height: 1.875em;
     align-items: center;
 }
 
 /* Estilos específicos para pantallas más pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 48em) {
     .content div {
-        font-size: 14px; /* Reducir el tamaño del texto en pantallas pequeñas */
+        font-size: 0.875em; /* Reducir el tamaño del texto en pantallas pequeñas */
     }
 
     .column img {
@@ -92,42 +93,46 @@ footer {
 /* Estilos para la tabla */
 table {
     width: 100%;
+    max-width: 100em;
     border-collapse: collapse; /* Asegura que no haya espacios entre las celdas */
-    margin: 50px; /* Agrega margen alrededor de la tabla para separarla del contenido */
+    margin: 3.125em; /* Agrega margen alrededor de la tabla para separarla del contenido */
 }
 
 td.column {
     box-sizing: border-box;
     color: #FFF;
     vertical-align: middle; /* Alinea verticalmente el contenido en el centro de las celdas */
+    max-width: 50em;
 }
 /* Estilos para el div .contador */
 .contador {
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 1.25em;
+    padding: 1.25em;
     text-align: center;
-    border: 2px solid #fff; /* Añade bordes de 2px de ancho en color blanco */
-    border-radius: 10px; /* Añade esquinas redondeadas */
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); /* Añade una sombra sutil */
+    border: 0.125em solid #fff; /* Añade bordes de 0.125rem de ancho en color blanco */
+    border-radius: 0.625em; /* Añade esquinas redondeadas */
+    box-shadow: 0em 0em 0.625em rgba(255, 255, 255, 0.5); /* Añade una sombra sutil */
+    max-width: 150em;
 }
 
 #fecha {
     line-height: 1em;
     font-size: 300%;
     color: white;
-    margin: 5px;
+    margin: 0.3125em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48em) {
     #fecha {
         font-size: 150%;
-        margin: 5px;
+        margin: 0.3125em;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30em) {
     #fecha {
         font-size: 90%;
     }
 }
+
 
