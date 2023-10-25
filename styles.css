@@ -1,0 +1,90 @@
+/* Estilos generales para la página */
+body {
+    background-image: url('assets/img/kplantilla\ storie\ .png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFF;
+    margin: 0;
+    padding: 0; /* Agrega un margen y relleno cero para evitar espacios no deseados */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #004EA1;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.centered-logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para el contenido */
+.content {
+    text-align: center;
+}
+
+.content div {
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    color: #FFF;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #004EA1;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para las divisiones en el cuerpo */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.column img {
+    display: block;
+    margin-bottom: 50px;
+    margin-left: 250px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-links a {
+    text-align: center;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilos específicos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .content div {
+        font-size: 14px; /* Reducir el tamaño del texto en pantallas pequeñas */
+    }
+
+    /* Puedes agregar más estilos específicos para pantallas pequeñas según tus necesidades */
+}
