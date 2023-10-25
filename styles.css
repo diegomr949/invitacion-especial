@@ -38,7 +38,6 @@ footer {
     padding: 0.625em;
 }
 
-
 /* Estilos para las divisiones en el cuerpo */
 .container {
     display: flex;
@@ -56,9 +55,7 @@ footer {
 .column img {
     display: block;
     margin-bottom: 1.25em;
-    margin-left: auto;
-    margin-right: auto;
-    
+    margin: 0 auto; /* Centra horizontalmente las imágenes */
 }
 
 .social-links {
@@ -104,6 +101,7 @@ td.column {
     vertical-align: middle; /* Alinea verticalmente el contenido en el centro de las celdas */
     max-width: 50em;
 }
+
 /* Estilos para el div .contador */
 .contador {
     margin-top: 1.25em;
@@ -114,15 +112,16 @@ td.column {
     box-shadow: 0em 0em 0.625em rgba(255, 255, 255, 0.5); /* Añade una sombra sutil */
     max-width: 150em;
 }
+
 iframe {
-    width: 25em; /* Establecer el ancho deseado */
-    height: 18.75em; /* Establecer la altura deseada */
+    max-width: 100%; /* Ajustar al ancho del contenedor */
+    width: 100%; /* Asegurarse de que llene el ancho del contenedor */
+    height: auto; /* Ajustar la altura automáticamente según el ancho */
     border: 0; /* Quitar el borde */
     allowfullscreen: true; /* Permitir pantalla completa */
     loading: lazy; /* Carga perezosa */
     referrerpolicy: no-referrer-when-downgrade; /* Política de referencia */
-  }
-  
+}
 
 #fecha {
     line-height: 1em;
@@ -143,5 +142,3 @@ iframe {
         font-size: 90%;
     }
 }
-
-
