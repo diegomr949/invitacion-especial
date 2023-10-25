@@ -87,19 +87,27 @@ footer {
     /* Puedes agregar más estilos específicos para pantallas pequeñas según tus necesidades */
 }
 
-/* Estilos para la tabla */
-table {
-    width: 100%;
-    max-width: 100em;
-    border-collapse: collapse; /* Asegura que no haya espacios entre las celdas */
-    margin: 3.125em; /* Agrega margen alrededor de la tabla para separarla del contenido */
+
+.container {
+    display: flex;
+    flex-direction: column; /* Por defecto, uno debajo del otro */
 }
 
-td.column {
-    box-sizing: border-box;
-    color: #FFF;
-    vertical-align: middle; /* Alinea verticalmente el contenido en el centro de las celdas */
-    max-width: 50em;
+.column {
+    margin: 1rem; /* Espacio entre los elementos */
+}
+
+/* Estilos específicos para pantallas más grandes (PC) */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row; /* Uno al lado del otro en pantallas más grandes */
+        align-items: center; /* Alinea verticalmente en el centro */
+    }
+
+    .column {
+        flex: 1;
+        margin: 1rem;
+    }
 }
 
 /* Estilos para el div .contador */
@@ -113,14 +121,15 @@ td.column {
     max-width: 150em;
 }
 
-iframe {
-    max-width: 100%; /* Ajustar al ancho del contenedor */
-    width: 100%; /* Asegurarse de que llene el ancho del contenedor */
-    height: auto; /* Ajustar la altura automáticamente según el ancho */
-    border: 0; /* Quitar el borde */
-    allowfullscreen: true; /* Permitir pantalla completa */
-    loading: lazy; /* Carga perezosa */
-    referrerpolicy: no-referrer-when-downgrade; /* Política de referencia */
+
+.formulario {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.formulario iframe {
+    display: block; /* Hace que el iframe sea un bloque para centrar verticalmente */
+    margin: 0 auto; /* Centra el iframe horizontalmente */
+    max-width: 100%; /* Asegura que el iframe se ajuste al ancho del contenedor */
 }
 
 #fecha {
