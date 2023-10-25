@@ -8,12 +8,18 @@ body {
     color: #FFF;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 /* Estilos para el contenido */
 .content {
     text-align: center;
     padding: 20px; /* Espacio entre el contenido y los bordes */
+}
+
+.centered-logo {
+    display: block;
+    margin: 0 auto; /* Esto centra horizontalmente el contenido */
 }
 
 .content div {
@@ -29,6 +35,15 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
+}
+
+iframe {
+    width: 100%; /* El iframe ocupará el 100% del ancho de su contenedor */
+    max-width: 640px; /* Establece un ancho máximo para el iframe */
+    height: auto; /* El alto se ajustará automáticamente para mantener la relación de aspecto */
+    border: none; /* Elimina el borde del iframe */
+    margin: 0; /* Elimina cualquier margen */
+    padding: 0; /* Elimina cualquier relleno */
 }
 
 /* Estilos para las divisiones en el cuerpo */
@@ -65,6 +80,7 @@ footer {
 .logo {
     width: 30px;
     height: 30px;
+    align-items: center;
 }
 
 /* Estilos específicos para pantallas más pequeñas */
@@ -84,15 +100,14 @@ footer {
 table {
     width: 100%;
     border-collapse: collapse; /* Asegura que no haya espacios entre las celdas */
+    margin: 50px; /* Agrega margen alrededor de la tabla para separarla del contenido */
 }
 
 td.column {
-    padding: 10px;
     box-sizing: border-box;
     color: #FFF;
-    vertical-align: top; /* Alinea el contenido en la parte superior de las celdas */
+    vertical-align: middle; /* Alinea verticalmente el contenido en el centro de las celdas */
 }
-
 /* Estilos para el div .contador */
 .contador {
     margin-top: 20px;
