@@ -88,3 +88,64 @@ footer {
 
     /* Puedes agregar más estilos específicos para pantallas pequeñas según tus necesidades */
 }
+table {
+    width: 100%;
+    border: 0; /* Elimina los bordes de la tabla */
+}
+
+td.column {
+    padding: 10px;
+    box-sizing: border-box;
+    color: #FFF;
+    vertical-align: top; /* Alinea el contenido en la parte superior de las celdas */
+}
+
+
+
+.content div {
+    margin-bottom: 50px; /* Crea un espacio en la parte inferior de cada div */
+    margin-block-end: 50px;
+    margin-block-start: 50px;
+    border-color: #FFF;
+    border-radius: 3px;
+    
+}
+
+/* Estilos para el div .contador */
+.contador {
+    margin-top: 5px;
+    border-top: 3px solid #fff; /* Línea separadora en la parte superior */
+    border-bottom: 3px solid #fff; /* Línea separadora en la parte inferior */
+    padding: 20px; /* Espacio entre el contenido y los bordes */
+}
+.contador{
+    body {
+        margin: 0;
+        padding: 0;
+        margin-top: 5;
+        margin-bottom: 5;
+      
+      }
+  
+      #fecha {
+        line-height: 1em;
+        text-align: center;
+        font-size: 300%;
+        color: WHITE;
+        margin: 5px;
+      }
+  
+      @media (max-width: 768px) {
+        #fecha {
+          font-size: 150%; /* Reduzco el tamaño de fuente para pantallas más pequeñas */
+          margin: 5px; /* Reduzco los márgenes para pantallas más pequeñas */
+        }
+      }
+  
+      @media (max-width: 480px) {
+        #fecha {
+          font-size: 90%; /* Reduzco aún más el tamaño de fuente para pantallas pequeñas (como celulares en posición vertical) */
+        }
+      }
+}
+
